@@ -1,0 +1,15 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Developer: Winfred Nadeau
+  Site: http://liberat.us 
+  Twitter: wnadeau
+  Location: Atlanta, GA
+
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery, BackboneJS, Mailchimp
+  Software: Ruby on Rails
