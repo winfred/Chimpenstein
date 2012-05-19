@@ -37,8 +37,6 @@
 .campaignPick{
   min-height: 50px;
   text-align: center;
-  border: thin black;
-  border-radius: 5px;
 }
 div.createCampaign{
   padding-top: 20px;
@@ -49,11 +47,15 @@ div.createCampaign{
   visibility: hidden;
 }
 a.action{
+  padding: 20px;
   font-size: 24px;
+}
+.web_url{
   color: @orange;
 }
 a.action:hover{
   color: darken(@orange, 10%);
+.web_url:hover{
 }
 .status{
   width: 50%;
@@ -74,7 +76,7 @@ a.action:hover{
 }
 
 
-// Use Mailchimp layout
+// Mailchimp layout
 body{
   background: #DDD9D8 image-url('noise.png');
 }
@@ -115,7 +117,7 @@ body > .container{
 }
 @media (max-width: 979px){
   body{
-    padding-top: 0;
+    padding: 0;
   }
   .navbar-fixed-top{
     margin-bottom: 0;
