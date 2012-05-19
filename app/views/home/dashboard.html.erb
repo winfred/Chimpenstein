@@ -1,0 +1,9 @@
+<div id="campaigns">
+</div>
+<script>
+  $(function() {
+    Chimpenstein.dc = '<%= @dc -%>';
+    window.router = new Chimpenstein.Routers.CampaignsRouter();
+    Backbone.history.start();
+  });
+</script>
