@@ -17,5 +17,6 @@
 //= require backbone
 //= require backbone/chimpenstein
 //= require mc_api
+//= require spin
 //= require_tree .
 

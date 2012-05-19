@@ -18,6 +18,7 @@ class Chimpenstein.Routers.CampaignsRouter extends Backbone.Router
     #TODO: show loading
     Mailchimp.API.call 'campaigns', {filters: {status: "save,paused", type: 'regular'},limit: 100}, (data) ->
       campaigns.reset data.data
+      $('#spin').data('spinner').spin()
       #TODO: hide loading
     @view = new Chimpenstein.Views.Campaigns.StepTwoView(campaigns: @campaigns, config: @config)
     $('#campaigns').html(@view.render().el)
