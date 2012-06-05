@@ -17,7 +17,7 @@ class Chimpenstein.Models.Config extends Backbone.Model
     @fetchCampaigns ->
       config.updateStatus "Merging campaigns", 40
       config.createSplit (result)->
-        config.updateStatus "Finished", 100
+        config.updateStatus "We've built an A/B test campaign with the data from both campaigns.", 100
         config.set 'web_url', result
         config.trigger 'create:finished'
         
