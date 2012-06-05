@@ -34,6 +34,30 @@
 .table td, .table th{
   text-align: center;
 }
+
+//Front page
+.explanation{
+  margin-left: -10px;
+}
+.explanation-image{
+    height: 600px;
+    background-image: image-url('arrow_join.png');
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+}
+.steps{
+  padding-left: 10px;
+}
+.steps ol{
+  margin-top: 30%;
+  font-size: 30px;
+}
+.steps ol li{
+  line-height: 100%;
+  padding: 10px 0;
+}
+
+//Laboratory
 .campaignPick{
   min-height: 50px;
   text-align: center;
@@ -69,6 +93,15 @@ a.action{
 }
 
 @media (max-width: 767px){
+  .steps ol{
+    margin-top: 0;
+  }
+  .steps{
+    padding-left: 20px;
+  }
+  .explanation{
+    margin-left: 0;
+  }
   .campaignPick{
     margin: 5px;
   }
