@@ -9,12 +9,6 @@ class Chimpenstein.Views.Campaigns.CampaignView extends Backbone.View
     "click .popup-preview": "showPreview"
 
   tagName: "tr"
-  
-  attributes:
-    class: 'popper'
-    'data-content': "Clicking on the name of the campaign will open up a handy popup preview."
-    'data-original-title': "Popup Preview"
-    'data-placement': 'top'
 
   pickA: (e) ->
     @toggleSelected(e.currentTarget, 'A')
@@ -41,5 +35,4 @@ class Chimpenstein.Views.Campaigns.CampaignView extends Backbone.View
 
   render: ->
     $(@el).html(@template(@model.toJSON() ))
-    $(@el).popover()
     return this
